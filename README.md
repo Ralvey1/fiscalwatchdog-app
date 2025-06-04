@@ -1,30 +1,41 @@
-# Fiscal Watchdog  
-A 990 Audit Analyzer for Nonprofit Oversight
+#  Fiscal Watchdog  
+**A 990 Audit Analyzer for Nonprofit Oversight**
 
-Fiscal Watchdog is an open-source tool designed to scan nonprofit IRS Form 990 data and highlight financial red flags. It helps advocates, journalists, auditors, and community members hold nonprofit organizations accountable—especially those receiving public funding or administering critical programs like 340B.
+**Fiscal Watchdog** is an open-source tool that scans IRS Form 990 filings (PDF or XML) to detect financial red flags. Designed for community watchdogs, journalists, auditors, and advocates—especially in sectors like HIV care, healthcare access, and 340B oversight.
 
-Built by advocates, for advocates.
-
----
-
-# Features
-
-- Scan IRS 990 financials (PDF or data)
-- Flag:
-  - Miscellaneous expenses over 10%
-  - Professional fees over 3% without disclosure
-  - Supplies exceeding 25% of total expenses
-  - 340B program misuse risks
-  - Governance and audit conflicts
-- Export an Excel audit report with red flags and suggested questions
-- User-friendly desktop interface (Python-based GUI)
-- Custom logo and brand options for local watchdog orgs
+>  Built by advocates, for advocates.  
+>  Rooted in transparency, equity, and public accountability.
 
 ---
 
-# How to Use
+##  Features
 
-1. Download and install Python 3.11+
-2. Install dependencies:
-   ```bash
-   pip install pandas openpyxl tkinter
+- 🔍 Scan IRS 990 financials (PDFs, OCR, or XML)
+-  Auto-detect and flag:
+  -  Miscellaneous expenses >10%
+  -  Professional fees >3% (without details)
+  -  Supplies >25% of expenses
+  -  Cell phone cost per employee >$450
+  -  Excessive admin costs or salaries
+  -  340B program misuse risks (via pattern alerting)
+  -  Governance conflicts and repeat vendor overlap
+-  Calculate:
+  - Clients per employee
+  - Cost per employee
+  - Admin cost per employee
+  - Salary per client served
+-  Accept folder input or pick individual PDFs
+-  Generate Excel reports with flags + recommendations
+-  Cross-platform GUI (Windows + macOS)
+-  Custom brand/logo support for local watchdogs
+
+---
+
+## How to Use
+
+### 1. Install Python 3.11+
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+### 2. Install dependencies
+```bash
+pip install pandas openpyxl pymupdf pytesseract Pillow
