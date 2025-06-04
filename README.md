@@ -10,7 +10,7 @@
 
 ##  Features
 
-- 🔍 Scan IRS 990 financials (PDFs, OCR, or XML)
+-  Scan IRS 990 financials (PDFs, OCR, or XML)
 -  Auto-detect and flag:
   -  Miscellaneous expenses >10%
   -  Professional fees >3% (without details)
